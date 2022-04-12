@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            height: 400px;
+            border: 2px solid red;
+            display: flex;
+
+        }
+
+        .box {
+            font-size: 3em;
+            width: 200px;
+
+            border: 3px dashed rebeccapurple;
+        }
+
+        #box-1 {
+            order: 2;
+        }
+
+        #box-2 {
+            flex-grow: 1;
+            order: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>I am Flexible right now</h1>
+    <div class="container">
+        <div class="box" id="box-1">Box - 1</div>
+        <div class="box" id="box-2">
+            <h3>Box - 2</h3>
+            <!-- article.blog*3>h4{Blog - $}+p>lorem30 -->
+            <article class="blog">
+                <h4>Blog - 1</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus incidunt adipisci rerum consectetur
+                    corrupti placeat culpa deleniti maiores, est possimus iusto qui. Deserunt quis sit officia rerum
+                    illo quam explicabo!</p>
+            </article>
+            <article class="blog">
+                <h4>Blog - 2</h4>
+                <p>Quod laborum deleniti aut aperiam consectetur harum dolore, corrupti distinctio soluta quis ipsa
+                    dicta. Officiis reprehenderit amet blanditiis nulla expedita, corrupti sequi quam iusto possimus,
+                    voluptates molestias, vitae sit temporibus!</p>
+            </article>
+            <article class="blog">
+                <h4>Blog - 3</h4>
+                <p>Perspiciatis beatae labore dicta nisi assumenda quasi modi explicabo dolorum ratione, iusto
+                    perferendis, quas illo illum itaque nam aspernatur suscipit tempore non rem excepturi reiciendis.
+                    Deserunt fuga eveniet rem libero?</p>
+            </article>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
